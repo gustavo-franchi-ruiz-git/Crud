@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/records.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/libs/google-fonts.css">
+        <title>Crud</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo-header">Cadastro de Clientes</h1>
+        </header>
+        <main>
+            <button type="button" class="button blue" id="cadastrarCliente">Cadastrar Cliente</button>
+        <div class="filtro-busca">
+            <label for="filtrar-tabela">Filtre:</label>
+            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite nome, sobrenome ou email">
+        </div>
+            <table class="records" id="myTable">
+                <thead>
+                    <tr>
+                        <th class="ordena">
+                            Nome 
+                            </th>
+                        <th class="ordena">
+                            Sobrenome 
+                        <th class="ordena">
+                            Email
+                        </th>
+                        <th id="mostraCaracter">
+                            Qtd Caracter
+                        </th>
+                            <th>
+                                Remover
+                            </th>
+                    </tr>
+                </thead>
+                <tbody class="tabelapessoas" id="tabela-pessoas">
+                    <tr class="pessoa">
+                        <td class="info-nome">Gustavo</td>
+                        <td class="info-sobrenome">Franchi Ruiz</td>
+                        <td class="info-email">ruiz@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Carolina</td>
+                        <td class="info-sobrenome">Castro</td>
+                        <td class="info-email">carolcastro@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Sandra</td>
+                        <td class="info-sobrenome">Du Felix</td>
+                        <td class="info-email">sdfelix@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Cleyton</td>
+                        <td class="info-sobrenome">Dantas</td>
+                        <td class="info-email">dantas@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Felipe</td>
+                        <td class="info-sobrenome">Smith</td>
+                        <td class="info-email">Smith@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Leo</td>
+                        <td class="info-sobrenome">Dias</td>
+                        <td class="info-email">ldias@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Vitor</td>
+                        <td class="info-sobrenome">Dulix</td>
+                        <td class="info-email">dulix@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Jonathan</td>
+                        <td class="info-sobrenome">Dinho</td>
+                        <td class="info-email">jdinho@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Antonio</td>
+                        <td class="info-sobrenome">Freitas</td>
+                        <td class="info-email">afreitas@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Melissa</td>
+                        <td class="info-sobrenome">Criscorova</td>
+                        <td class="info-email">melissa@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="pessoa">
+                        <td class="info-nome">Marcos</td>
+                        <td class="info-sobrenome">Caxias</td>
+                        <td class="info-email">mcaxias@gmail.com</td>
+                        <td class="info-caracter"><span class="info-carac"></span></td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Novo Cliente</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form class="modal-form" id="form-adiciona">
+                        <input type="text" name="nome" class="modal-field" id="campoNome"  placeholder="Entre com o nome" required>
+                        <input type="text" name="sobrenome" class="modal-field" id="campoSobrenome" placeholder="Entre com o sobrenome" required>
+                        <input type="email" name="email" class="modal-field" id="campoEmail" placeholder="Entre com o email" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <ul id="mensagens-erro"></ul>
+                        <button type="button" class="button green" id="cadastraPessoa">Salvar</button>
+                        <button type="button" class="button red" id="modalFecha">Cancelar</button>
+                    </footer>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/contador.js"></script>
+        <script src="js/abrirModal.js"></script>
+        <script src="js/ordena.js"></script>
+        <script src="js/adicional.js"></script>
+        <script src="js/remover.js"></script>
+        <script src="js/busca.js"></script>
+        <script src="js/editavel.js"></script>
+        
+
+    </body>
+</html>

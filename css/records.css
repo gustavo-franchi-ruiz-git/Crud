@@ -1,0 +1,61 @@
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+
+.records th{
+    height: 50px;
+    background-color: var(--primary-color);
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.records td{
+    height: 50px;
+    padding-left: 20px;
+}
+
+.records th,
+.records td{
+    padding: 0;
+    min-width: 10px;
+    text-align: center;
+}
+
+.records tr{
+    background-color: lightgray;
+}
+
+.info-caracter{
+    text-align: center;
+}
+
+.info-carac{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.records th{
+    cursor: pointer;
+}
+
+.records th:nth-child(5){
+    cursor: auto;
+}
+.celulaEmEdicao{
+    padding: 1em 1em;
+}
+
+
+.celulaEmEdicao input[type=text]{
+    width:auto;
+    padding: .5em;
+    border:0;
+    background-color:white;
+    cursor: text;
+}
+
+.records tr:nth-child(odd){
+    background-color: whitesmoke;
+}
