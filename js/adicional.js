@@ -54,7 +54,6 @@ function novoDado(nome, sobrenome, email){
 }
 
 function removeLinha(){
-    event.preventDefault();
     var linha = $(this).parent().parent()
     linha.fadeOut(1000);
     setTimeout(function () {
